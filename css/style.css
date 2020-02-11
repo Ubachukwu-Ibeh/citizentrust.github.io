@@ -98,6 +98,17 @@ ol {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+.citizen-logo2{
+	margin-bottom: 30px;
+	width: 200px;
+	height: 100px;
+	background-image: url("../img/LOGO.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.one{
+	margin-left: 20px;
+}
 /*---------------------
 	Helper CSS
 -----------------------*/
@@ -109,7 +120,7 @@ ol {
 }
 
 .section-title {
-	margin-bottom: 60px;
+	margin-bottom: 100px;
 }
 
 .section-title h2 {
@@ -181,7 +192,7 @@ ol {
 }
 
 .site-btn.sb-gradients.sbg-line {
-	color: #20509e;
+	color: #ce2b2b;
 	z-index: 1;
 }
 
