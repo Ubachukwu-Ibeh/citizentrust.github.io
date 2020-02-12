@@ -88,17 +88,19 @@ ol {
 	padding: 0;
 	margin: 0;
 }
+
 /*---------------------
     UBA'S CSS
 -----------------------*/
-.citizen-logo{
+.citizen-logo {
 	width: 200px;
 	height: 100px;
 	background-image: url("../img/LOGO.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.citizen-logo2{
+
+.citizen-logo2 {
 	margin-bottom: 30px;
 	width: 200px;
 	height: 100px;
@@ -106,9 +108,15 @@ ol {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.one{
+
+.one {
 	margin-left: 20px;
 }
+
+.location {
+	margin-top: 10px;
+}
+
 /*---------------------
 	Helper CSS
 -----------------------*/
@@ -120,7 +128,7 @@ ol {
 }
 
 .section-title {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .section-title h2 {
@@ -224,7 +232,7 @@ ol {
 	background: -o-linear-gradient(left, #ce2b2b 0%, #ffcc00 100%, #ffcc00 100%, #ffcc00 100%);
 	background: linear-gradient(to right, #ce2b2b 0%, #ffcc00 100%, #ffcc00 100%, #ffcc00 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e2bce', endColorstr='#2dd3aa', GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e2bce', endColorstr='#2dd3aa', GradientType=1);
 	/* IE6-9 */
 }
 
@@ -276,19 +284,21 @@ ol {
 @keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
-		        transform: rotate(0deg);
+		transform: rotate(0deg);
 		border: 4px solid #f44336;
 		border-left-color: transparent;
 	}
+
 	50% {
 		-webkit-transform: rotate(180deg);
-		        transform: rotate(180deg);
+		transform: rotate(180deg);
 		border: 4px solid #673ab7;
 		border-left-color: transparent;
 	}
+
 	100% {
 		-webkit-transform: rotate(360deg);
-		        transform: rotate(360deg);
+		transform: rotate(360deg);
 		border: 4px solid #f44336;
 		border-left-color: transparent;
 	}
@@ -300,11 +310,13 @@ ol {
 		border: 4px solid #f44336;
 		border-left-color: transparent;
 	}
+
 	50% {
 		-webkit-transform: rotate(180deg);
 		border: 4px solid #673ab7;
 		border-left-color: transparent;
 	}
+
 	100% {
 		-webkit-transform: rotate(360deg);
 		border: 4px solid #f44336;
@@ -486,10 +498,21 @@ ol {
 .process-step {
 	position: relative;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 300px;
 	padding: 35px;
 	margin-top: 30px;
 	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
-	        box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+	box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+}
+
+@media screen and (max-width: 320px) {
+	.process-step {
+		width: 300px;
+		height: 300px;
+	}
 }
 
 .process-step .process-icon {
@@ -499,22 +522,14 @@ ol {
 }
 
 .process-step h4 {
+	margin: auto;
 	margin-bottom: 15px;
 }
 
 .process-step p {
-	margin-bottom: 0;
+	margin: auto;
 }
 
-.process-step:after {
-	position: absolute;
-	content: '';
-	width: 275px;
-	height: 56px;
-	top: -40px;
-	right: -40%;
-	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
-}
 
 /*---------------------
 	Fact Section
@@ -575,7 +590,7 @@ ol {
 	text-align: center;
 	padding: 50px 10px;
 	-webkit-box-shadow: 1px 1px 1px rgba(33, 54, 61, 0.15);
-	        box-shadow: 1px 1px 1px rgba(33, 54, 61, 0.15);
+	box-shadow: 1px 1px 1px rgba(33, 54, 61, 0.15);
 	border-radius: 10px;
 	position: relative;
 }
@@ -600,7 +615,7 @@ ol {
 
 .member:hover {
 	-webkit-box-shadow: 1px 14px 43px rgba(33, 54, 61, 0.15);
-	        box-shadow: 1px 14px 43px rgba(33, 54, 61, 0.15);
+	box-shadow: 1px 14px 43px rgba(33, 54, 61, 0.15);
 }
 
 .member:hover .member-info {
@@ -695,7 +710,7 @@ ol {
 	border: 6px solid #fff;
 	border-radius: 50%;
 	-webkit-box-shadow: 0px 16px 21px rgba(33, 54, 61, 0.15);
-	        box-shadow: 0px 16px 21px rgba(33, 54, 61, 0.15);
+	box-shadow: 0px 16px 21px rgba(33, 54, 61, 0.15);
 	display: inline-block;
 }
 
@@ -841,7 +856,7 @@ ol {
 	background: #fff;
 	padding: 30px;
 	-webkit-box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.1);
-	        box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.1);
+	box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.1);
 }
 
 .blog-text .post-date {
@@ -1040,7 +1055,7 @@ ol {
 .widget-area {
 	padding: 30px;
 	-webkit-box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.15);
-	        box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.15);
+	box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.15);
 	margin-bottom: 32px;
 }
 
@@ -1188,7 +1203,7 @@ ol {
 	padding-top: 9px;
 	font-size: 14px;
 	-webkit-box-shadow: 0 0 0 1px #ebebeb;
-	        box-shadow: 0 0 0 1px #ebebeb;
+	box-shadow: 0 0 0 1px #ebebeb;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
@@ -1210,7 +1225,7 @@ ol {
 
 .releted-posts .blog-text {
 	-webkit-box-shadow: 0 0 0 1px #ebebeb;
-	        box-shadow: 0 0 0 1px #ebebeb;
+	box-shadow: 0 0 0 1px #ebebeb;
 	padding: 28px 28px 20px;
 }
 
@@ -1461,7 +1476,7 @@ ol {
 .map {
 	height: 390px;
 	-webkit-box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.15);
-	        box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.15);
+	box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.15);
 }
 
 /*------------------
@@ -1484,15 +1499,18 @@ ol {
 	.header-section .site-btn {
 		margin-left: 0;
 	}
+
 	.hero-section,
 	.page-info-section {
 		background-position: right 30% top;
 	}
+
 	.hero-section .laptop-image {
 		width: auto;
 		max-width: 100%;
 		top: 70px;
 	}
+
 	.about-img {
 		left: -50px;
 		width: 600px;
@@ -1503,14 +1521,17 @@ ol {
 	.member {
 		padding: 35px 10px;
 	}
+
 	.member-img {
 		width: 160px;
 		height: 160px;
 	}
+
 	.member-info {
 		padding: 50px 27px 10px;
 		height: 275px;
 	}
+
 	.member-social a {
 		margin: 0 5px;
 	}
@@ -1522,28 +1543,35 @@ ol {
 	.menu-list li a {
 		margin-right: 15px;
 	}
+
 	.hero-section,
 	.page-info-section {
 		background-position: right 23% top;
 	}
+
 	.about-img {
 		left: 0px;
 		width: 480px;
 	}
+
 	.member {
 		width: calc(33.333333% - 25px);
 		margin-bottom: 30px;
 	}
+
 	.team-members {
 		text-align: center;
 	}
+
 	.fact h2 {
 		font-size: 45px;
 		margin-right: 10px;
 	}
+
 	.fact p {
 		padding-top: 7px;
 	}
+
 	.fact i {
 		font-size: 67px;
 	}
@@ -1555,26 +1583,33 @@ ol {
 	.header-section {
 		padding: 30px 15px 0;
 	}
+
 	.menu-list li a {
 		margin-right: 6px;
 	}
+
 	.header-section .site-btn {
 		margin-left: 10px;
 	}
+
 	.hero-section {
 		background-position: right 25% top;
 		height: 730px;
 		padding-top: 160px;
 	}
+
 	.page-info-section {
 		background-position: right 33% top;
 	}
+
 	.page-info-section h2 {
 		font-size: 40px;
 	}
+
 	.hero-text h2 {
 		font-size: 45px;
 	}
+
 	.process-step:after {
 		width: 154px;
 		height: 35px;
@@ -1582,6 +1617,7 @@ ol {
 		right: -44%;
 		background-size: contain;
 	}
+
 	.about-img {
 		position: relative;
 		display: block;
@@ -1589,40 +1625,51 @@ ol {
 		width: auto;
 		margin-top: 50px;
 	}
+
 	.member {
 		width: calc(33.333333% - 25px);
 		margin-bottom: 30px;
 		padding: 35px 10px;
 	}
+
 	.member-img {
 		width: 160px;
 		height: 160px;
 	}
+
 	.member-info {
 		padding: 50px 27px 10px;
 		height: 275px;
 	}
+
 	.member-social a {
 		margin: 0 5px;
 	}
+
 	.team-members {
 		text-align: center;
 	}
+
 	.fact {
 		margin-bottom: 30px;
 	}
+
 	.pull-3 {
 		right: 0;
 	}
+
 	.push-8 {
 		left: 0;
 	}
+
 	.review-section {
 		text-align: center;
 	}
+
 	.review-text {
 		padding: 0 60px;
 	}
+
 	.review-text-slider .owl-nav {
 		padding-top: 0;
 		position: absolute;
@@ -1631,24 +1678,31 @@ ol {
 		left: 0;
 		width: 100%;
 	}
+
 	.review-text-slider .owl-prev {
 		float: left;
 	}
+
 	.review-text-slider .owl-next {
 		float: right;
 	}
+
 	.review-meta-slider {
 		margin: auto;
 	}
+
 	.author-meta {
 		padding-top: 0;
 	}
+
 	.newsletter-form {
 		padding-left: 0;
 	}
+
 	.footer-widget {
 		margin-bottom: 30px;
 	}
+
 	.newsletter-section {
 		text-align: center;
 	}
@@ -1661,12 +1715,14 @@ ol {
 		padding: 30px 0;
 		background: #fff;
 	}
+
 	.header-section .responsive-bar {
 		float: right;
 		font-size: 25px;
 		display: block;
 		cursor: pointer;
 	}
+
 	.header-section .user {
 		float: right;
 		font-size: 25px;
@@ -1674,6 +1730,7 @@ ol {
 		margin-right: 20px;
 		display: block;
 	}
+
 	.main-menu {
 		float: none;
 		position: absolute;
@@ -1684,37 +1741,45 @@ ol {
 		padding: 0 15px;
 		display: none;
 		-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
-		        box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+		box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 	}
+
 	.menu-list {
 		list-style: none;
 	}
+
 	.menu-list li {
 		display: block;
 		border-top: 1px solid #e1e1e1;
 	}
+
 	.menu-list li a {
 		display: block;
 		padding: 10px 5px;
 		margin-right: 0;
 		color: #20509e;
 	}
+
 	.hero-text h2 {
 		font-size: 40px;
 	}
+
 	.hero-section {
 		height: auto;
 		padding-bottom: 100px;
 		padding-top: 160px;
 		background-position: right 50% top;
 	}
+
 	.page-info-section {
 		background-position: right 56% top;
 		margin-top: 97px;
 	}
+
 	.page-info-section h2 {
 		font-size: 40px;
 	}
+
 	.about-img {
 		position: relative;
 		display: block;
@@ -1722,33 +1787,42 @@ ol {
 		width: auto;
 		margin-top: 50px;
 	}
+
 	.team-members {
 		margin: 0;
 		padding: 0 15px;
 	}
+
 	.member {
 		width: 100%;
 		margin-bottom: 30px;
 		margin-left: 0;
 	}
+
 	.fact {
 		margin-bottom: 30px;
 	}
+
 	.process-step:after {
 		display: none;
 	}
+
 	.pull-3 {
 		right: 0;
 	}
+
 	.push-8 {
 		left: 0;
 	}
+
 	.review-section {
 		text-align: center;
 	}
+
 	.review-text {
 		padding: 0 60px;
 	}
+
 	.review-text-slider .owl-nav {
 		padding-top: 0;
 		position: absolute;
@@ -1757,36 +1831,47 @@ ol {
 		left: 0;
 		width: 100%;
 	}
+
 	.review-text-slider .owl-prev {
 		float: left;
 	}
+
 	.review-text-slider .owl-next {
 		float: right;
 	}
+
 	.review-meta-slider {
 		margin: auto;
 	}
+
 	.author-meta {
 		padding-top: 0;
 	}
+
 	.header-section .site-btn {
 		display: none;
 	}
+
 	.newsletter-form {
 		padding-left: 0;
 	}
+
 	.newsletter-section {
 		text-align: center;
 	}
+
 	.review-text p {
 		font-size: 20px;
 	}
+
 	.blog-item {
 		margin-bottom: 30px;
 	}
+
 	.footer-widget {
 		margin-bottom: 30px;
 	}
+
 	.single-blog-page .social-share {
 		text-align: left;
 		margin-top: 20px;
@@ -1799,42 +1884,52 @@ ol {
 	.review-text {
 		padding: 0 45px;
 	}
+
 	.review-text p {
 		font-size: 18px;
 	}
+
 	.newsletter-form input {
 		padding-right: 30px;
 	}
+
 	.newsletter-form button {
 		position: relative;
 		padding: 14px;
 		border-radius: 50px;
 		margin-top: 23px;
 	}
+
 	.review-text-slider .owl-prev,
 	.review-text-slider .owl-next {
 		width: 40px;
 		height: 40px;
 		font-size: 18px;
 	}
+
 	.review-meta-slider {
 		width: auto;
 	}
+
 	.member-img {
 		width: 180px;
 		height: 180px;
 	}
+
 	.member-info {
 		padding: 50px 20px 10px;
 		height: 320px;
 	}
+
 	.blog-text {
 		padding: 15px;
 	}
+
 	.comment .comment-avator {
 		float: none;
 		margin-bottom: 20px;
 	}
+
 	.comment .comment-content {
 		padding-left: 0;
 	}
