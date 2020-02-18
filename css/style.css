@@ -142,7 +142,7 @@ ol {
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center 0;
+	background-position: center;
 }
 
 .text-white h1,
@@ -452,10 +452,13 @@ ol {
 .about-img {
 	position: absolute;
 	top: 0;
-	left: -120px;
+	right: -120px;
 	width: 662px;
+	display: flex;
 }
-
+.about-img img{
+	margin: auto;
+}
 /*---------------------
   Feature Section
 -----------------------*/
@@ -507,7 +510,9 @@ ol {
 	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 	box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 }
-
+.process-step p{
+	text-align: left;
+}
 @media screen and (max-width: 320px) {
 	.process-step {
 		width: 300px;
@@ -1493,6 +1498,10 @@ ol {
 	.hero-section .laptop-image {
 		left: 0;
 	}
+	.about-img {
+		left: -50px;
+		width: 600px;
+	}
 }
 
 @media (max-width: 1425px) {
@@ -1511,10 +1520,7 @@ ol {
 		top: 70px;
 	}
 
-	.about-img {
-		left: -50px;
-		width: 600px;
-	}
+	
 }
 
 @media (min-width: 1199px) and (max-width: 1390px) {
